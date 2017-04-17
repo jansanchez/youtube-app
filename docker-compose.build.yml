@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  youtube:
+    image: js/youtube
+    build:
+      context: ./docker/youtube/

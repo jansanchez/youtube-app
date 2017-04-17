@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  youtube:
+    image: js/youtube
+    ports:
+      - 3001:2999
+    volumes:
+      - ./app/:/home/youtube/app/
+      - /home/youtube/app/node_modules
