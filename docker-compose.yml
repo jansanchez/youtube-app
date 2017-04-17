@@ -7,4 +7,5 @@ services:
       - 3001:2999
     volumes:
       - ./app/:/home/youtube/app/
+      - .volumes/shared:/home/youtube/shared/
       - /home/youtube/app/node_modules
