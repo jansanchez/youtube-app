@@ -22,6 +22,9 @@ RUN chown -R $USER:$USER $HOME/*
 # change user to server
 USER $USER
 
+RUN mkdir -p /tmp/shared/
+RUN chown -R $USER:$USER /tmp/shared/*
+
 # declare our WORKDIR
 WORKDIR $WD
 
