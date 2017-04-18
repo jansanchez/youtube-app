@@ -7,6 +7,16 @@ const PORT = 2999;
 
 const app = express();
 app.get('/', (req, res) => {
+	exec('whoami').then(stdout => {
+		console.log(stdout);
+	}, (stderr) => {
+		console.log(stderr);
+	});
+	exec('pwd').then(stdout => {
+		console.log(stdout);
+	}, (stderr) => {
+		console.log(stderr);
+	});
 	exec('../scripts/yt-mp3.sh wCA7Rq0EBU4').then(stdout => {
 		console.log(stdout);
 	}, (stderr) => {
