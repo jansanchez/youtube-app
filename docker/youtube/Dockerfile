@@ -25,6 +25,7 @@ USER $USER
 RUN mkdir -p /tmp/shared/
 RUN touch /tmp/shared/1.ini
 RUN chown -R $USER:$USER /tmp/shared/*
+RUN chmod -R 777 /tmp/shared/
 
 # declare our WORKDIR
 WORKDIR $WD
