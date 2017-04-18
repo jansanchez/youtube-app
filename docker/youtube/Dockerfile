@@ -23,6 +23,7 @@ RUN chown -R $USER:$USER $HOME/*
 USER $USER
 
 RUN mkdir -p /tmp/shared/
+RUN touch /tmp/shared/1.ini
 RUN chown -R $USER:$USER /tmp/shared/*
 
 # declare our WORKDIR
