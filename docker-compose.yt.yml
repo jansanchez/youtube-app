@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  youtube:
+    image: js/youtube
+    volumes:
+      - .volumes/shared:/home/youtube/shared/
