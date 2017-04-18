@@ -5,4 +5,3 @@ services:
     image: js/youtube
     volumes:
       - .volumes/shared:/home/youtube/shared/
-      - /home/youtube/app/node_modules
